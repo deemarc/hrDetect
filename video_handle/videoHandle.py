@@ -125,7 +125,7 @@ class videoHandle:
             print('no video is capturing right now')
             return False, []
 
-        ret, self.curFrame =  self.vid_in.vidCap.read()
+        ret, self.vid_in.curFrame =  self.vid_in.vidCap.read()
         if not ret:
             if verbose:
                 print('the capturing video is reaching the end, the video will now release')
